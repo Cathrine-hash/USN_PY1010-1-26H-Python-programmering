@@ -4,7 +4,7 @@ alder = int(input("Hvilket år er du født? "))
 print(f"Du er {int(årstall) - alder} år gammel.") # Caster alder til int for å kunne trekke fra årstall.
 
 # Oppgave 2 Detter programmet beregner antallet pizzaer ut ifra antallet oppgitte elever
-import numpy as np
+import numpy as np # Kjør "pip install numpy" i terminal for å installere numpy biblioteket.
 antall_elever = int(input("Skriv inn antallet elever i klassen? "))
 
 
