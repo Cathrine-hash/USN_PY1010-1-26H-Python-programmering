@@ -49,6 +49,33 @@ data[nytt_land] = [hovedstad, befolkning]
 
 print(data) 
 
-# Oppgave 5
-# Oppgave 6
+# Oppgave 5 Lag et program med en funksjon som tar a og b som innargumenter n/
+#og som regner ut arealet og ytre omkrets til en figur som er satt sammen /n
+#av en rettvinklet trekant og en halvsirkel. Funksjonen skal returnere arealet og ytre omkrets.
 
+import numpy as np
+
+def beregne_areal_og_ytreomkrets(a, b): 
+    #Beregne radius 
+    r = a / 2 
+    #Beregne hypotenus
+    hypotenus = np.sqrt(a**2 + b**2) 
+    
+    #Bergne arealer
+    areal_trekant = (a * b) / 2
+    areal_halvsirkel = (np.pi * r**2) / 2
+    totalt_areal = areal_trekant + areal_halvsirkel
+    
+    #Beregne omkrets
+    omkrets_halvsirkel = np.pi * r
+    omkrets_ytre = omkrets_halvsirkel + b + hypotenus
+    
+    return totalt_areal, omkrets_ytre
+
+a = int(4)
+b = int(5)
+areal, ytre_omkrets = beregne_areal_og_ytreomkrets(a, b)
+#Skriver ut arealet og ytre omkretsen med 2 desimaler til terminal.
+print(f"Arealet til figuren er {areal:.2f} og den ytre omkretsen er {ytre_omkrets:.2f}.")    
+
+#Oppgave 6 
