@@ -57,8 +57,6 @@ data[nytt_land] = [hovedstad, befolkning] # Legger til nytt land og informasjon 
 print(f"Landet {nytt_land} er lagt til i ordboka med informasjon: {data[nytt_land]}") #Sjekk at nytt land og informasjon er lagt til i ordboka.
 print() # Tom linje for å skille output
 
-
-
 # Oppgave 5 
 print("Programmet beregner arealet og ytre omkretsen til en figur.")
 
